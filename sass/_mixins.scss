@@ -1,0 +1,14 @@
+$gray:#828388;
+$black:#2E3038;
+$blue:#184AFB;
+
+%global_btn{
+    margin-top: 10px;
+    padding: 9px 50px;
+    border-radius: 50px;
+    border: 1px solid $blue;
+    text-transform: capitalize;
+    color: $blue;
+    background-color: #FFF;
+    cursor: pointer;
+}

@@ -1,0 +1,67 @@
+@import '../mixins';
+
+.hero{
+    padding-bottom: 120px;
+    &__texts{
+        margin-top: 48px;
+    }
+
+    &__title{
+        color: var(--Daminant, #2E3038);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 125% */
+        text-transform: uppercase;
+    }
+    &__desc{
+        color: var(--descropion, #828388);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        margin-top: 20px;
+    }
+
+    &__img{
+        margin-top: 50px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media (min-width:972px) {
+    .hero{
+        &__texts{
+            margin-top: 148px;
+        }
+        &__texts{
+            display: flex;
+            gap: 157px;
+            align-items: center;
+        }
+    
+        &__title{
+            max-width: 509px;
+            color: var(--Daminant, #2E3038);
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 60px; /* 125% */
+            text-transform: uppercase;
+        }
+        &__desc{
+            max-width: 372px;
+            color: var(--descropion, #828388);
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+    }
+}
