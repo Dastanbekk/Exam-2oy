@@ -1,0 +1,367 @@
+.about__hero{
+    padding: 120px 0;
+    &-title{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 52px; /* 130% */
+        text-transform: uppercase;
+        max-width: 493px;
+    }
+    &-img{
+        img{
+            max-width: 497px;
+            width: 100%;
+        }
+    }
+
+    &-statistics{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &-statistic{
+    border-bottom: 1px solid $gray;
+        h3{
+            color: #184AFB;
+            font-family: Michroma;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px; /* 180% */
+            text-transform: uppercase;  
+        }
+        p{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 175% */
+            text-transform: capitalize;
+            color: #333;
+        }
+    }
+
+    &-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 60px;
+    }
+    &-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 487px;
+        width: 100%;
+        padding: 60px 0 ;
+        border: 1px solid $gray;
+        border-radius: 8px;
+    }
+
+    &-texts{
+        margin-top: 30px;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 20px;
+        p{
+            max-width: 519px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            color: $gray
+        }
+        button{
+            @extend %global_btn;
+        }
+    }
+
+    &-paragraph{
+        padding: 40px 0;
+        display: flex;
+        flex-direction:column;
+        gap:20px;
+        border-bottom: 1px solid $gray  ;
+        h3{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 52px; /* 162.5% */
+            text-transform: capitalize;
+            color: $black;
+        }
+        P{
+            max-width: 745px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            color: $gray;
+        }
+    }
+    &-startups{
+        padding: 60px 0;
+
+    }
+    .startup__cards{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .startup__card{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 20px;
+        &-left{
+            background-color: #f5f5f5;
+            padding: 28px 40px;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        &-right{
+            border-top: 1px solid $gray;
+            p{
+                margin-top: 30px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 171.429% */
+                letter-spacing: 0.14px;
+                text-transform: capitalize;
+                color: $black;
+            }
+            button{
+                @extend %global_btn;
+
+            }
+        }
+    }
+
+}
+
+
+
+.plates{
+    padding-bottom: 60px;
+    &__title{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 75% */
+        text-transform: uppercase;
+    }
+    &__img{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top:20px;
+        img{
+            max-width: 654px;
+            width: 100%;
+        }
+    }
+    &__desc{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        p{
+            max-width: 639px;
+            color: #666;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+        }
+    }
+    &__btns{
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        button{
+            @extend %global_btn;
+            &:nth-child(2){
+                background-color: #184AFB;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:972px) {
+    .about__hero{
+        padding: 150px 0;
+        &-in{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+        &-title{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 52px; /* 130% */
+            text-transform: uppercase;
+            max-width: 493px;
+        }
+        &-img{
+            img{
+                max-width: 987px;
+                width: 100%;
+            }
+        }
+    
+        &-statistics{
+            display: flex;
+            flex-direction: row;
+            margin-top: 32px;
+        }
+    
+        &-statistic{
+        border-bottom: none;
+        border-right: 1px solid $gray;
+        padding-right: 170px;
+        padding-left: 33px;
+        margin-right: 20;
+        &:nth-child(3){
+            border-right: none;
+        }
+            h3{
+                color: #184AFB;
+                font-family: Michroma;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 72px; /* 180% */
+                text-transform: uppercase;  
+            }
+            p{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; /* 175% */
+                text-transform: capitalize;
+                color: #333;
+                margin-top: 60px;
+            }
+        }
+        &-cards{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 60px;
+        }
+        &-texts{
+            display: flex;
+            gap: 309px;
+            margin-top: 30px;
+            border-bottom: 1px solid $gray;
+            padding-bottom: 40px;
+            p{
+                max-width: 519px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+                color: $gray
+            }
+            button{
+                @extend %global_btn;
+                padding: 6px 61px;
+            }
+        }
+
+        &-paragraph{
+            padding: 40px 0;
+            display: flex;
+            flex-direction:column;
+            gap:20px;
+            h3{
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 52px; /* 162.5% */
+                text-transform: capitalize;
+                color: $black;
+            }
+            P{
+                max-width: 745px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+                color: $gray;
+            }
+        }
+        &-startups{
+            padding: 120px 0;
+            h3{
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; /* 75% */
+                color: #333;
+            }
+        }
+        .startup__card{
+            display: flex;
+            flex-direction:row;
+            align-items:flex-start;
+
+            gap: 20px;
+            &-right{
+                border-top: 1px solid $gray;
+                p{
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; /* 171.429% */
+                    letter-spacing: 0.14px;
+                    text-transform: capitalize;
+                    color: $black;
+                }
+                button{
+                    @extend %global_btn;
+                    margin-top: 51px;
+                }
+            }
+        }
+    }
+
+
+    .plates{
+        padding-bottom: 120px;
+        &__title{
+            display: flex;
+            justify-content: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 75% */
+            text-transform: uppercase;
+        }
+        &__img{
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            margin-top:20px;
+            img{
+                max-width: 654px;
+                width: 100%;
+            }
+        }
+    }
+
+}
