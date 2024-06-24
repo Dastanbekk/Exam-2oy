@@ -112,6 +112,7 @@ body {
   background-color: #184AFB;
 }
 .header__item a {
+  position: relative;
   color: var(--descropion, #828388);
   font-family: Poppins;
   font-size: 16px;
@@ -119,6 +120,19 @@ body {
   font-weight: 400;
   line-height: 24px; /* 150% */
   color: #FFF;
+}
+.header__item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #184AFB;
+  transition: all 0.6s;
+}
+.header__item a:hover::after {
+  width: 100%;
 }
 .header__list-show {
   left: 0;
